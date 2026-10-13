@@ -54,6 +54,46 @@ footer{background:#081b15;text-align:center;padding:20px}
         padding: 18px;
     }
 }
+/* SOCIAL MEDIA BUTTONS */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    color: #f5d68b;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #f5d68b;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background: #f5d68b;
+    color: #102c24;
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(245, 214, 139, 0.7);
+}
+
+.social-btn:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .social-btn {
+        padding: 12px 20px;
+    }
+}
 </style>
 </head>
 <body>
@@ -106,7 +146,37 @@ footer{background:#081b15;text-align:center;padding:20px}
     </div>
 </section>
 
+<!-- SOCIAL MEDIA SECTION -->
+<section id="social">
+    <h2>Connect With Me 🌐</h2>
+    <p>Follow me and stay connected!</p>
 
+    <div class="social-buttons">
+        <a class="social-btn facebook"
+           href="https://www.facebook.com/profile.php?id=100090361016469"
+           target="_blank" rel="noopener noreferrer">
+            Facebook
+        </a>
+
+        <a class="social-btn youtube"
+           href="YOUR_YOUTUBE_LINK"
+           target="_blank" rel="noopener noreferrer">
+            YouTube
+        </a>
+
+        <a class="social-btn tiktok"
+           href="YOUR_TIKTOK_LINK"
+           target="_blank" rel="noopener noreferrer">
+            TikTok
+        </a>
+
+        <a class="social-btn whatsapp"
+           href="https://wa.me/67579977273"
+           target="_blank" rel="noopener noreferrer">
+            WhatsApp
+        </a>
+    </div>
+</section>
 <footer>© 2026 Bata Rens | My Personal Website</footer>
 </body>
 </html>
