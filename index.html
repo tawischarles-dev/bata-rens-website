@@ -21,6 +21,39 @@ audio{max-width:100%;margin:12px}
 .button{display:inline-block;border:2px solid #f5d68b;border-radius:25px;padding:12px 22px;color:#f5d68b;text-decoration:none;margin:10px}
 footer{background:#081b15;text-align:center;padding:20px}
 @keyframes float{to{transform:translateY(-10px)}}
+/* STYLISH MUSIC CARDS */
+.music-card {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 2px solid #f5d68b;
+    border-radius: 18px;
+    box-shadow: 0 0 15px rgba(245, 214, 139, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(245, 214, 139, 0.6);
+}
+
+.music-card h3 {
+    color: #f5d68b;
+    margin-bottom: 18px;
+}
+
+.music-card audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 600px) {
+    .music-card {
+        width: 92%;
+        padding: 18px;
+    }
+}
 </style>
 </head>
 <body>
@@ -52,15 +85,27 @@ footer{background:#081b15;text-align:center;padding:20px}
 <img src="photo3.jpg" alt="My third photograph">
 </div>
 </section>
-
 <section id="music">
-<h2>My Music 🎵</h2>
-<p>Choose a song and enjoy!</p>
-<p>First Song</p>
-<audio controls><source src="music.mp3" type="audio/mpeg"></audio>
-<p>Second Song</p>
-<audio controls><source src="second%20song.mp3" type="audio/mpeg"></audio>
+    <h2>🎵 My Music 🎵</h2>
+    <p>Relax, listen, and enjoy my music collection.</p>
+
+    <div class="music-card">
+        <h3>🎶 First Song</h3>
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </div>
+
+    <div class="music-card">
+        <h3>🎶 Second Song</h3>
+        <audio controls>
+            <source src="second%20song.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </div>
 </section>
+
 
 <footer>© 2026 Bata Rens | My Personal Website</footer>
 </body>
