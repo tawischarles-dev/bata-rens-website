@@ -94,6 +94,19 @@ footer{background:#081b15;text-align:center;padding:20px}
         padding: 12px 20px;
     }
 }
+/* Beautiful glowing animation */
+h1 {
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #f5d68b;
+    }
+    to {
+        text-shadow: 0 0 25px #ffd700, 0 0 40px #f5d68b;
+    }
+}
 </style>
 </head>
 <body>
